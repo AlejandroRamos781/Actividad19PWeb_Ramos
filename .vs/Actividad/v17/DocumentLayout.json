@@ -1,0 +1,249 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\alexr\\source\\repos\\Actividad\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0E4096D6-4E6A-4983-ABE9-5E948C679913}|Actividad\\Actividad.csproj|c:\\users\\alexr\\source\\repos\\actividad\\actividad\\components\\pages\\renderpost.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0E4096D6-4E6A-4983-ABE9-5E948C679913}|Actividad\\Actividad.csproj|solutionrelative:actividad\\components\\pages\\renderpost.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E4096D6-4E6A-4983-ABE9-5E948C679913}|Actividad\\Actividad.csproj|c:\\users\\alexr\\source\\repos\\actividad\\actividad\\models\\repositorio\\repositoriocomment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E4096D6-4E6A-4983-ABE9-5E948C679913}|Actividad\\Actividad.csproj|solutionrelative:actividad\\models\\repositorio\\repositoriocomment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E4096D6-4E6A-4983-ABE9-5E948C679913}|Actividad\\Actividad.csproj|c:\\users\\alexr\\source\\repos\\actividad\\actividad\\models\\repositorio\\irepositoriocomment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E4096D6-4E6A-4983-ABE9-5E948C679913}|Actividad\\Actividad.csproj|solutionrelative:actividad\\models\\repositorio\\irepositoriocomment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E4096D6-4E6A-4983-ABE9-5E948C679913}|Actividad\\Actividad.csproj|c:\\users\\alexr\\source\\repos\\actividad\\actividad\\components\\pages\\postdetails.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0E4096D6-4E6A-4983-ABE9-5E948C679913}|Actividad\\Actividad.csproj|solutionrelative:actividad\\components\\pages\\postdetails.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E4096D6-4E6A-4983-ABE9-5E948C679913}|Actividad\\Actividad.csproj|c:\\users\\alexr\\source\\repos\\actividad\\actividad\\components\\pages\\loginform.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0E4096D6-4E6A-4983-ABE9-5E948C679913}|Actividad\\Actividad.csproj|solutionrelative:actividad\\components\\pages\\loginform.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E4096D6-4E6A-4983-ABE9-5E948C679913}|Actividad\\Actividad.csproj|c:\\users\\alexr\\source\\repos\\actividad\\actividad\\models\\repositorio\\repositoriopost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E4096D6-4E6A-4983-ABE9-5E948C679913}|Actividad\\Actividad.csproj|solutionrelative:actividad\\models\\repositorio\\repositoriopost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E4096D6-4E6A-4983-ABE9-5E948C679913}|Actividad\\Actividad.csproj|c:\\users\\alexr\\source\\repos\\actividad\\actividad\\components\\pages\\userform.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0E4096D6-4E6A-4983-ABE9-5E948C679913}|Actividad\\Actividad.csproj|solutionrelative:actividad\\components\\pages\\userform.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E4096D6-4E6A-4983-ABE9-5E948C679913}|Actividad\\Actividad.csproj|c:\\users\\alexr\\source\\repos\\actividad\\actividad\\components\\pages\\editpostform.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0E4096D6-4E6A-4983-ABE9-5E948C679913}|Actividad\\Actividad.csproj|solutionrelative:actividad\\components\\pages\\editpostform.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E4096D6-4E6A-4983-ABE9-5E948C679913}|Actividad\\Actividad.csproj|c:\\users\\alexr\\source\\repos\\actividad\\actividad\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0E4096D6-4E6A-4983-ABE9-5E948C679913}|Actividad\\Actividad.csproj|solutionrelative:actividad\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__ProjectModels/Dbproject/True/SqlTable/dbo.Posts.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E4096D6-4E6A-4983-ABE9-5E948C679913}|Actividad\\Actividad.csproj|c:\\users\\alexr\\source\\repos\\actividad\\actividad\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E4096D6-4E6A-4983-ABE9-5E948C679913}|Actividad\\Actividad.csproj|solutionrelative:actividad\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E4096D6-4E6A-4983-ABE9-5E948C679913}|Actividad\\Actividad.csproj|c:\\users\\alexr\\source\\repos\\actividad\\actividad\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E4096D6-4E6A-4983-ABE9-5E948C679913}|Actividad\\Actividad.csproj|solutionrelative:actividad\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E4096D6-4E6A-4983-ABE9-5E948C679913}|Actividad\\Actividad.csproj|c:\\users\\alexr\\source\\repos\\actividad\\actividad\\models\\repositorio\\irepositoriopost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E4096D6-4E6A-4983-ABE9-5E948C679913}|Actividad\\Actividad.csproj|solutionrelative:actividad\\models\\repositorio\\irepositoriopost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E4096D6-4E6A-4983-ABE9-5E948C679913}|Actividad\\Actividad.csproj|c:\\users\\alexr\\source\\repos\\actividad\\actividad\\models\\repositorio\\irepositoriousers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E4096D6-4E6A-4983-ABE9-5E948C679913}|Actividad\\Actividad.csproj|solutionrelative:actividad\\models\\repositorio\\irepositoriousers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginForm.razor",
+              "DocumentMoniker": "C:\\Users\\alexr\\source\\repos\\Actividad\\Actividad\\Components\\Pages\\LoginForm.razor",
+              "RelativeDocumentMoniker": "Actividad\\Components\\Pages\\LoginForm.razor",
+              "ToolTip": "C:\\Users\\alexr\\source\\repos\\Actividad\\Actividad\\Components\\Pages\\LoginForm.razor",
+              "RelativeToolTip": "Actividad\\Components\\Pages\\LoginForm.razor",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAcAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-17T18:07:27.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\alexr\\source\\repos\\Actividad\\Actividad\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Actividad\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\alexr\\source\\repos\\Actividad\\Actividad\\Models\\User.cs",
+              "RelativeToolTip": "Actividad\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T21:28:14.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RepositorioComment.cs",
+              "DocumentMoniker": "C:\\Users\\alexr\\source\\repos\\Actividad\\Actividad\\Models\\Repositorio\\RepositorioComment.cs",
+              "RelativeDocumentMoniker": "Actividad\\Models\\Repositorio\\RepositorioComment.cs",
+              "ToolTip": "C:\\Users\\alexr\\source\\repos\\Actividad\\Actividad\\Models\\Repositorio\\RepositorioComment.cs",
+              "RelativeToolTip": "Actividad\\Models\\Repositorio\\RepositorioComment.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAjwBsAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T21:25:31.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IRepositorioComment.cs",
+              "DocumentMoniker": "C:\\Users\\alexr\\source\\repos\\Actividad\\Actividad\\Models\\Repositorio\\IRepositorioComment.cs",
+              "RelativeDocumentMoniker": "Actividad\\Models\\Repositorio\\IRepositorioComment.cs",
+              "ToolTip": "C:\\Users\\alexr\\source\\repos\\Actividad\\Actividad\\Models\\Repositorio\\IRepositorioComment.cs",
+              "RelativeToolTip": "Actividad\\Models\\Repositorio\\IRepositorioComment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T21:25:05.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PostDetails.razor",
+              "DocumentMoniker": "C:\\Users\\alexr\\source\\repos\\Actividad\\Actividad\\Components\\Pages\\PostDetails.razor",
+              "RelativeDocumentMoniker": "Actividad\\Components\\Pages\\PostDetails.razor",
+              "ToolTip": "C:\\Users\\alexr\\source\\repos\\Actividad\\Actividad\\Components\\Pages\\PostDetails.razor",
+              "RelativeToolTip": "Actividad\\Components\\Pages\\PostDetails.razor",
+              "ViewState": "AQIAAH4AAAAAAAAAAAAAAIoAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-15T20:40:10.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "dbo.Posts [Datos]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__ProjectModels/Dbproject/True/SqlTable/dbo.Posts.sql",
+              "ToolTip": "dbo.Posts [Datos]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-05-15T07:39:59.893Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RenderPost.razor",
+              "DocumentMoniker": "C:\\Users\\alexr\\source\\repos\\Actividad\\Actividad\\Components\\Pages\\RenderPost.razor",
+              "RelativeDocumentMoniker": "Actividad\\Components\\Pages\\RenderPost.razor",
+              "ToolTip": "C:\\Users\\alexr\\source\\repos\\Actividad\\Actividad\\Components\\Pages\\RenderPost.razor*",
+              "RelativeToolTip": "Actividad\\Components\\Pages\\RenderPost.razor*",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAFEAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-16T07:08:58.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EditPostForm.razor",
+              "DocumentMoniker": "C:\\Users\\alexr\\source\\repos\\Actividad\\Actividad\\Components\\Pages\\EditPostForm.razor",
+              "RelativeDocumentMoniker": "Actividad\\Components\\Pages\\EditPostForm.razor",
+              "ToolTip": "C:\\Users\\alexr\\source\\repos\\Actividad\\Actividad\\Components\\Pages\\EditPostForm.razor",
+              "RelativeToolTip": "Actividad\\Components\\Pages\\EditPostForm.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-17T17:21:44.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RepositorioPost.cs",
+              "DocumentMoniker": "C:\\Users\\alexr\\source\\repos\\Actividad\\Actividad\\Models\\Repositorio\\RepositorioPost.cs",
+              "RelativeDocumentMoniker": "Actividad\\Models\\Repositorio\\RepositorioPost.cs",
+              "ToolTip": "C:\\Users\\alexr\\source\\repos\\Actividad\\Actividad\\Models\\Repositorio\\RepositorioPost.cs",
+              "RelativeToolTip": "Actividad\\Models\\Repositorio\\RepositorioPost.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAcwBcAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T21:29:49.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserForm.razor",
+              "DocumentMoniker": "C:\\Users\\alexr\\source\\repos\\Actividad\\Actividad\\Components\\Pages\\UserForm.razor",
+              "RelativeDocumentMoniker": "Actividad\\Components\\Pages\\UserForm.razor",
+              "ToolTip": "C:\\Users\\alexr\\source\\repos\\Actividad\\Actividad\\Components\\Pages\\UserForm.razor",
+              "RelativeToolTip": "Actividad\\Components\\Pages\\UserForm.razor",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACYAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-17T18:09:21.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\alexr\\source\\repos\\Actividad\\Actividad\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Actividad\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\alexr\\source\\repos\\Actividad\\Actividad\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "Actividad\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADMAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-17T17:20:16.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IRepositorioUsers.cs",
+              "DocumentMoniker": "C:\\Users\\alexr\\source\\repos\\Actividad\\Actividad\\Models\\Repositorio\\IRepositorioUsers.cs",
+              "RelativeDocumentMoniker": "Actividad\\Models\\Repositorio\\IRepositorioUsers.cs",
+              "ToolTip": "C:\\Users\\alexr\\source\\repos\\Actividad\\Actividad\\Models\\Repositorio\\IRepositorioUsers.cs",
+              "RelativeToolTip": "Actividad\\Models\\Repositorio\\IRepositorioUsers.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T21:57:50.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Post.cs",
+              "DocumentMoniker": "C:\\Users\\alexr\\source\\repos\\Actividad\\Actividad\\Models\\Post.cs",
+              "RelativeDocumentMoniker": "Actividad\\Models\\Post.cs",
+              "ToolTip": "C:\\Users\\alexr\\source\\repos\\Actividad\\Actividad\\Models\\Post.cs",
+              "RelativeToolTip": "Actividad\\Models\\Post.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T07:31:18.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IRepositorioPost.cs",
+              "DocumentMoniker": "C:\\Users\\alexr\\source\\repos\\Actividad\\Actividad\\Models\\Repositorio\\IRepositorioPost.cs",
+              "RelativeDocumentMoniker": "Actividad\\Models\\Repositorio\\IRepositorioPost.cs",
+              "ToolTip": "C:\\Users\\alexr\\source\\repos\\Actividad\\Actividad\\Models\\Repositorio\\IRepositorioPost.cs",
+              "RelativeToolTip": "Actividad\\Models\\Repositorio\\IRepositorioPost.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T21:29:55.488Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

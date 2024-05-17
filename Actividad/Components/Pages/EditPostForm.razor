@@ -1,0 +1,82 @@
+﻿@page "/editPost/{PostID}"
+@rendermode InteractiveServer
+@inject NavigationManager _navigator
+@inject IRepositorioPost _repositorio
+
+<PageTitle>Post</PageTitle>
+
+<h2>Post</h2>
+
+<EditForm Model="_post" FormName="editForm" OnValidSubmit="saveEdit">
+    <DataAnnotationsValidator />
+
+    <div class="form-group">
+        <label>Email</label>
+        <InputText class="form-control" @bind-Value="_post.Title" />
+        <ValidationMessage For="() => _post.Title" />
+
+    </div>
+    <div class="form-group">
+        <label>Contraseña</label>
+        <InputTextArea class="form-control" @bind-Value="_post.TextBody" />
+
+        <ValidationMessage For="() => _post.TextBody" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Editar post</button>
+</EditForm>
+
+
+
+@code {
+    [Parameter]
+    public string PostId { get; set; }
+
+    private Post _post = new();
+    [Inject]
+    private DataService dataService { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        int id = getIntId(PostId);
+        _post = await _repositorio.Get(id);
+    }
+
+
+    private int getIntId(string stringId)
+    {
+        int intId;
+        bool res = int.TryParse(stringId, out intId);
+        if (res)
+        {
+            return intId;
+        }
+        else
+        {
+            return 0;
+        }
+    }
+
+
+
+    private async void saveEdit()
+    {
+        int userId;
+        bool success = int.TryParse(dataService.GlobalData, out userId);
+        if (success)
+        {
+            await _repositorio.Update(_post);
+        }
+        else
+        {
+
+        }
+
+    }
+
+
+
+
+
+
+}

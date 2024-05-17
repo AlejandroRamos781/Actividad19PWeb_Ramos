@@ -1,0 +1,73 @@
+﻿@page "/Users"
+@rendermode InteractiveServer
+@inject NavigationManager _navigator;
+@inject IRepositorioUsers _repositorio;
+@inject IRepositorioComment _commentRepo;
+@inject IRepositorioPost _postRepo;
+
+<h3>Estadisticas </h3>
+
+@if(_users == null)
+{
+    <div class="spinner-border" role="status">
+        <span class="visually-hidden">Cargando...</span>
+    </div>
+}
+else if(_users.Count == 0)
+{
+    <h3>No hay usuarios registrados</h3>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+               
+                <th scope="col">Total de post</th>
+                <th scope="col">Total de comentarios</th>
+                <th scope="col">Total de usuarios</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                @if(_posts.Count > 0)
+                {
+                    <td>@_posts.Count</td>
+                }
+
+            
+                @if (_comments.Count > 0)
+                {
+                    <td>@_comments.Count</td>
+                }
+           
+                @if (_users.Count > 0)
+                {
+                    <td>@_users.Count</td>
+                }
+              
+               
+            </tr>
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<User> _users = new();
+    private List<Comment> _comments = new();
+    private List<Post> _posts = new();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        _users = await _repositorio.GetAll();
+        
+        _comments = await _commentRepo.GetAll();
+       
+        _posts = await _postRepo.GetAll();
+    }
+
+    
+   
+}
+

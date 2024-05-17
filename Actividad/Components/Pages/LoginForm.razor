@@ -1,0 +1,55 @@
+﻿@page "/Login"
+@rendermode InteractiveServer
+@inject NavigationManager _navigator
+@inject IRepositorioUsers _repositorio
+
+
+
+<h3>Iniciar sesión</h3>
+
+<EditForm Model="_user" FormName="login" OnValidSubmit="login">
+    <DataAnnotationsValidator />
+   
+    <div class="form-group">
+        <label>Email</label>
+        <InputText type="email" class="form-control" aria-describedby="emailHelp" @bind-Value="_user.Email" />
+        <ValidationMessage For="() => _user.Email" />
+
+    </div>
+    <div class="form-group">
+        <label>Contraseña</label>
+        <InputText type="password" class="form-control" @bind-Value="_user.Password" />
+        <ValidationMessage For="() => _user.Password" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+</EditForm>
+
+@code {
+    private User _user = new User { Name = "Test", Email = "", Password = "" };
+    [Inject]
+    private DataService dataService { get; set; }
+
+
+    private async Task<User> login()
+    {
+        Console.WriteLine("login");
+
+        var user =  await _repositorio.GetUserByEmailAndPassword(_user.Email, _user.Password);
+        if (user != null)
+        {
+            Console.WriteLine("User founded");
+            dataService.GlobalData = (user.Id).ToString();
+            _navigator.NavigateTo("/");
+            return user;
+
+        }
+        else
+        {
+            
+            Console.WriteLine("User not found");
+            return null;
+        }
+    }
+
+}

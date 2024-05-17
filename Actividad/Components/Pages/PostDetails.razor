@@ -1,0 +1,157 @@
+﻿@page "/PostDetails/{PostId}"
+@rendermode InteractiveServer
+@inject NavigationManager _navigator
+@inject IRepositorioPost _repositorio
+@inject IRepositorioComment _commentRepo
+
+<div style="display:grid; justify-content:center; align-items:center;">
+    @if (_post != null)
+    {
+        <div class="card" style="width: 60rem; margin:2rem; height:20rem;">
+            <div class="card-body">
+                <h3 class="card-title">@_post.Title</h3>
+
+                <p class="card-text">@_post.TextBody</p>
+            </div>
+            
+        </div>
+    }
+    @if (getIntId(dataService.GlobalData) > 0 && edit)
+    {
+        <EditForm Model="_comment" FormName="comentarios" OnValidSubmit="addComent">
+            <DataAnnotationsValidator />
+
+            <div class="form-group">
+                <label>Añadir comentario</label>
+                <InputText class="form-control" aria-describedby="emailHelp" @bind-Value="_comment.CommentBody" />
+                <ValidationMessage For="() => _comment.CommentBody" />
+
+            </div>
+
+            <button type="submit" class="btn btn-primary">Agregar comentario</button>
+        </EditForm>
+    } else
+    {
+        @if (edit)
+        {
+            <p>Inicia sesion para dejar un comentario</p>
+        }
+    }
+
+    
+    @if (!edit)
+    {
+        <EditForm Model="_comment" FormName="EditarComent" OnValidSubmit="AddEditComment">
+            <DataAnnotationsValidator />
+
+            <div class="form-group">
+                <label>Editar comentario</label>
+                <InputText class="form-control" aria-describedby="emailHelp" @bind-Value="_comment.CommentBody" />
+                <ValidationMessage For="() => _comment.CommentBody" />
+
+            </div>
+
+            <button type="submit" class="btn btn-primary">Editar comentario</button>
+        </EditForm>
+    }
+
+
+    @if(_comments.Count > 0)
+    {
+        @foreach(var comment in _comments)
+        {
+            <div class="card" style="width: 40rem; margin:2rem; height:5rem;">
+                <div class="card-body">
+                    
+                    <h6>@comment.Item2</h6>
+                    <p class="card-text">@comment.Item1.CommentBody</p>
+                    @if (comment.Item1.User.Id == getIntId(dataService.GlobalData))
+                    {
+
+                        <button class="btn btn-primary" @onclick="()=>editComment(comment.Item1)">Editar</button>
+                        <button class="btn btn-danger"  @onclick="()=> deleteComment(comment.Item1)">Eliminar</button>
+                    }
+                </div>
+            
+               
+
+            </div>
+        }
+       
+    } else
+    {
+        <p>Este post no tiene comentarios</p>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public string PostId { get; set; }
+    private Post _post = new();
+    private List<(Comment,string)> _comments = new();
+    private bool edit = true;
+
+    private Comment _comment = new();
+
+    [Inject]
+    private DataService dataService { get; set; }
+
+    private int getIntId(string stringId)
+    {
+        int intId;
+        bool res =   int.TryParse(stringId, out intId);
+        if(res)
+        {
+            return intId;
+        }  else
+        {
+            return 0;
+        }
+    }
+
+    private async Task loadData()
+    {
+        int postID = getIntId(PostId);
+        _post = await _repositorio.Get(postID);
+        _comments = await _commentRepo.GetPostsAndUserNamesForPost(postID);
+    }
+    protected override async Task OnInitializedAsync()
+    {
+        await loadData();
+    }
+
+    private async void addComent()
+    {
+        int postID = getIntId(PostId);
+        int userID = getIntId(dataService.GlobalData);
+
+
+        await _commentRepo.Add(_comment, postID, userID);
+        _comment = new();
+        await loadData();
+        StateHasChanged();
+    }
+    private void editComment(Comment comment)
+    {
+
+        edit = false;
+        _comment = comment;
+        StateHasChanged();
+
+    }
+    private async void AddEditComment()
+    {
+
+        await _commentRepo.Update(_comment);
+        _comment = new();
+        StateHasChanged();
+    }
+    private async void deleteComment(Comment comment)
+    {
+        await _commentRepo.Delete(comment);
+       await  loadData();
+        StateHasChanged();
+
+    }
+
+}

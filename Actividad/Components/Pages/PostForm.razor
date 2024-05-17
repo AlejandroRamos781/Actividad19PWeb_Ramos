@@ -1,0 +1,66 @@
+﻿@page "/formPost"
+@rendermode InteractiveServer
+@inject NavigationManager _navigator
+@inject IRepositorioPost _repositorio
+
+<PageTitle>Post</PageTitle>
+
+<h2>Hacer post</h2>
+@if (dataService.GlobalData == "Initial Value")
+{
+        <h4>Necesitas iniciar sesión para hacer una publicacíon</h4>
+} else
+{
+    <EditForm Model="_post" FormName="postForm" OnValidSubmit="save">
+        <DataAnnotationsValidator />
+
+        <div class="form-group">
+            <label>Titulo</label>
+            <InputText class="form-control" @bind-Value="_post.Title" />
+            <ValidationMessage For="() => _post.Title" />
+
+        </div>
+        <div class="form-group">
+            <label>Contenido</label>
+            <InputTextArea class="form-control" @bind-Value="_post.TextBody" />
+
+            <ValidationMessage For="() => _post.TextBody" />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Hacer post</button>
+    </EditForm>
+}
+
+
+
+
+@code {
+    private Post _post = new();
+    [Inject]
+    private DataService dataService { get; set; }
+
+
+
+
+
+    private async Task save()
+    {
+        int userId;
+        bool success = int.TryParse(dataService.GlobalData, out userId);
+        if (success)
+        {
+
+            await _repositorio.Add(_post, userId);
+
+
+        }
+        _post = new();
+
+    }
+
+
+
+
+
+
+}

@@ -1,0 +1,90 @@
+﻿@page "/"
+@rendermode InteractiveServer
+@inject NavigationManager _navigator
+@inject IRepositorioPost _repositorio
+@inject IRepositorioUsers _userRepo
+
+<h3>Inicio</h3>
+<div style="display:grid; justify-content:center; align-items:center;">
+    @if (_posts.Count > 0)
+    {
+        @foreach (Post post in _posts)
+        {
+            <div class="card" style="width: 50rem; margin:2rem; height:20rem;">
+                <div class="card-body">
+                    <h5 class="card-title">@post.Title</h5>
+
+                    <p class="card-text">@post.TextBody</p>
+                </div>
+                <button class="btn btn-primary" @onclick="() => nav(post.PostId)">Ver comentarios</button>
+            </div>
+            @if(getIntId(dataService.GlobalData) > 0)
+            
+                @if (post.User == _user)
+                {
+
+                    <div>
+                        <button class="btn btn-primary" @onclick="() => editPost(post.PostId)">Editar</button>
+                        <button class="btn btn-danger" @onclick="()=> deletePost(post)">Eliminar</button>
+                    </div>
+                
+                
+            }
+        }
+    }
+    else
+    {
+        <p>No hay post disponibles</p>
+    }
+</div>
+
+
+@code {
+    private List<Post> _posts = new();
+    private User _user = new();
+
+    [Inject]
+    private DataService dataService { get; set; }
+
+    private async Task loadData()
+    {
+        _user = await _userRepo.Get(getIntId(dataService.GlobalData));
+        _posts = await _repositorio.GetAll();
+    }
+    protected override async Task OnInitializedAsync()
+    {
+        await loadData();
+    }
+
+    private int getIntId(string stringId)
+    {
+        int intId;
+        bool res = int.TryParse(stringId, out intId);
+        if (res)
+        {
+            return intId;
+        }
+        else
+        {
+            return 0;
+        }
+    }
+
+
+    private void nav(int PostId)
+    {
+        string stringPostId = PostId.ToString();
+        _navigator.NavigateTo($"/PostDetails/{stringPostId}");
+    }
+    private async void deletePost(Post post)
+    {
+        await _repositorio.Delete(post);
+        await loadData();
+        StateHasChanged();
+    }
+    private void editPost(int PostId)
+    {
+        _navigator.NavigateTo($"/editPost/{PostId}");
+    }
+
+}
